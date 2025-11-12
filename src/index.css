@@ -1,0 +1,138 @@
+:root{
+    /* variables */
+
+    --background: #17252a;
+    --normal: #2b7a78;
+    --highlight: #3aafa9;
+    --darkerText: #def2f1;
+    --text: #feffff;
+
+    /* root styling */
+
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--background);
+    color: var(--text);
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;  
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100vw;
+}
+
+/* header */
+.logoContainer{
+    width: 20%;
+}
+.logo{
+    width: 80px;
+    height: auto;
+}
+
+/* search bar section */
+.searchBarContainer{
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    border: var(--normal) 4px solid;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.searchBarContainer:hover{
+    border: var(--highlight) 4px solid;
+    transform: scale(1.005);
+}
+.searchBar{
+    width: 90%;
+    height: 100%;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: var(--text);
+}
+.searchBar::placeholder{
+    color: var(--darkerText);
+}
+.searchBar:focus{
+    outline: none;
+    border: none;
+}
+.searchIcon{
+    height: 90%;
+    width: auto;
+}
+
+/* main content */
+
+.mainContainer{
+    width: 100vw;
+    height: 80vh;
+}
+
+.cityWeatherContainer{
+    flex-direction: column;
+}
+
+/* temperature */
+.temperatureContainer {
+  display: flex;            
+  flex-direction: column;    
+  justify-content: center;  
+  align-items: center;       
+  color: var(--darkerText);
+  border-radius: 20px;
+  border: var(--highlight) 12px solid;
+  width: 30vw;
+  height: 50vh;
+}
+.temperatureText{
+    font-size: 300px;
+    font-weight: bold;
+    width: 20vw;
+    height: 35vh;
+    text-align: center;
+    margin-right: 0;
+}
+.celciusText{
+    font-size: 80px;
+    font-style: italic;
+    margin-left: -80px;
+}
+
+/* city and country */
+.cityText{
+    font-size: 80px;
+}
+.countryText{
+    font-size: 80px;
+}
+
+/* weather */
+.weatherText{
+    font-size: 60px;
+    color: var(--highlight);
+}
+.weatherIcon{
+    width: 150px;
+    height: auto;
+}
