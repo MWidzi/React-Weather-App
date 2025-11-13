@@ -3,8 +3,7 @@ import Context from '../Context';
 import React, { useState, useContext } from 'react';
 
 function Bar() {
-    // yes I know I put the api key in a public repo, idrc it's free anyway  
-    const apiKey = 'd2643e09494939b38826df33f3e5f461';
+    const apiKey = 'your api key';
     const [city, setCity] = useState('');
     const { sharedData, setSharedData } = useContext(Context);
 

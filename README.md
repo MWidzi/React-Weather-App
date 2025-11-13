@@ -10,6 +10,12 @@ inside a terminal navigate to the project directory and run
 npm install
 ```
 
+next generate an openweatherapp PAT and go to ./src/TopBar/Search_Bar.jsx and change this line 
+```js
+const apiKey = 'your api key';
+```
+to your PAT
+
 then to run the app, execute 
 ```sh 
 npm run dev
